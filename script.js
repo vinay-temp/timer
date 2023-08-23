@@ -10,13 +10,10 @@ function updateTimer() {
   const hours = Math.floor(minutes / 60);
   const days = Math.floor(hours / 24);
 
-  const formattedTime = `${days} days, ${hours % 24} hours, ${
-    minutes % 60
-  } min, ${seconds % 60} sec`;
-
-  document.getElementById(
-    "timer"
-  ).innerHTML = `${formattedTime}`;
+   document.getElementById("days").innerHTML = `${days} days`;
+   document.getElementById("hours").innerHTML = `${hours % 24} hours`;
+   document.getElementById("minutes").innerHTML = `${minutes % 60} minutes`;
+   document.getElementById("seconds").innerHTML = `${seconds % 60} seconds`;
 }
 
 // Update the timer every second
