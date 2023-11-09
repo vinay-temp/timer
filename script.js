@@ -1,5 +1,5 @@
 // (Year, Month (0-11), Day, Hour, Minute, Second)
-const startTime = new Date(2023, 10, 30, 0, 0, 0);
+const startTime = new Date(2023, 9, 30, 0, 0, 0);
 
 function updateTimer() {
   const currentTime = new Date();
